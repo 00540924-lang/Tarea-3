@@ -23,9 +23,3 @@ else:
     # Si la sesión no está iniciada, mostrar el login
     login()
 
-    # Si la sesión está iniciada, mostrar el contenido de ventas
-    mostrar_venta()
-else:
-    # Si la sesión no está iniciada, mostrar el login
-    login()
-
