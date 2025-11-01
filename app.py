@@ -5,7 +5,7 @@ from modulos.login import login
 # Comprobamos si la sesión ya está iniciada
 if "sesion_iniciada" in st.session_state and st.session_state["sesion_iniciada"]:
     import streamlit as st
-from modulos.Venta import mostrar_venta  # O usa "venta" en minúsculas si tu archivo es venta.py
+from modulos.venta import mostrar_venta  # O usa "venta" en minúsculas si tu archivo es venta.py
 from modulos.login import login
 
 # Comprobamos si la sesión ya está iniciada
