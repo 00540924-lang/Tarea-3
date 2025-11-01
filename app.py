@@ -1,6 +1,6 @@
 # app.py
 import streamlit as st
-from modulos.Venta import mostrar_venta  # Importamos la función mostrar_venta del módulo venta
+from modulos.Venta import mostrar_Venta  # Importamos la función mostrar_venta del módulo venta
 from modulos.login import login
 
 # Comprobamos si la sesión ya está iniciada
