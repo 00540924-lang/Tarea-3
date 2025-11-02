@@ -8,7 +8,7 @@ def mostrar_venta():
         con = obtener_conexion()
         cursor = con.cursor()
 
-        # Formulario para registrar la venta
+        # --- FORMULARIO PARA REGISTRAR VENTA ---
         with st.form("form_venta"):
             producto = st.text_input("Nombre del producto")
             cantidad = st.number_input("Cantidad", min_value=1, step=1)
@@ -29,12 +29,3 @@ def mostrar_venta():
                     except Exception as e:
                         con.rollback()
                         st.error(f"❌ Error al registrar la venta: {e}")
-
-    except Exception as e:
-        st.error(f"❌ Error general: {e}")
-
-    finally:
-        if 'cursor' in locals():
-            cursor.close()
-        if 'con' in locals():
-            con.close()
