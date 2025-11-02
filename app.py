@@ -1,7 +1,7 @@
 import streamlit as st
 from modulos.venta import mostrar_venta
 from modulos.Producto import mostrar_productos
-from modulos.Cliente import mostrar_clientes
+from modulos.cliente import mostrar_clientes
 from modulos.login import login
 
 # Comprobamos si la sesión ya está iniciada
