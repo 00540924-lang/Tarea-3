@@ -1,5 +1,5 @@
 import streamlit as st
-from modulos.Venta import mostrar_venta
+from modulos.venta import mostrar_venta
 from modulos.cliente import mostrar_clientes
 from modulos.login import login
 
