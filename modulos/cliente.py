@@ -43,7 +43,7 @@ def mostrar_clientes():
                 st.info("No hay clientes registrados aún.")
             else:
                 for c in clientes:
-                    st.write(f"🧾 **{c[1]}** — 📧 {c[2]} — 📞 {c[3]}")
+                    st.write(f"🧾 **{c[1]}** — 📧 {c[3]} — 📞 {c[2]}")
         except Exception as e:
             st.error(f"❌ Error al obtener la lista de clientes: {e}")
 
